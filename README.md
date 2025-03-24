@@ -5,6 +5,8 @@ A Minecraft plugin that allows players to purchase permissions, commands, and fe
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.16%2B-brightgreen)
 ![Bukkit](https://img.shields.io/badge/API-Bukkit-yellow)
+![Vault](https://img.shields.io/badge/API-Vault-orange)
+![PaperMC](https://img.shields.io/badge/API-PaperMC-pink)
 
 ## 📋 Table of Contents
 - [Overview](#-overview)
