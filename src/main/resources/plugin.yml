@@ -1,0 +1,39 @@
+name: PermissionsShop
+version: 1.0.0
+main: com.fusionslab.permissionshop.PermissionsShop
+api-version: 1.16
+author: FusionsLab
+description: A plugin that allows players to buy permissions and commands with in-game economy
+depend: [Vault]
+softdepend: [Essentials, CMI]
+
+commands:
+  permshop:
+    description: View the permissions shop
+    usage: /permshop
+    aliases: [pshop]
+  psbuy:
+    description: Buy a permission or command
+    usage: /psbuy <itemId>
+    aliases: [permsbuy]
+  psadmin:
+    description: Admin command for the permissions shop
+    usage: /psadmin <reload|give|revoke|list>
+    aliases: [permshop-admin, psadmin]
+
+permissions:
+  permissionshop.*:
+    description: Gives access to all PermissionsShop commands
+    children:
+      permissionshop.shop: true
+      permissionshop.buy: true
+      permissionshop.admin: true
+  permissionshop.shop:
+    description: Allows viewing the permissions shop
+    default: true
+  permissionshop.buy:
+    description: Allows buying permissions and commands
+    default: true
+  permissionshop.admin:
+    description: Allows using admin commands
+    default: op

@@ -1,0 +1,37 @@
+# PermissionsShop Messages Configuration
+
+prefix: "&8[&bPermShop&8]"
+
+# Error messages
+error:
+  no_permission: "&cYou don't have permission to use this command."
+  item_not_found: "&cItem not found."
+  not_enough_money: "&cYou don't have enough money to buy this. Price: &f{price}&c, Balance: &f{balance}"
+  invalid_purchase_type: "&cInvalid purchase type."
+  invalid_duration: "&cInvalid duration."
+  invalid_uses: "&cInvalid uses."
+  database_error: "&cAn error occurred while saving your purchase."
+  command_failed: "&cFailed to execute the command."
+  no_home_plugin: "&cNo home plugin found."
+  no_permission_or_uses: "&cYou don't have permission to use /{command} or you haven't purchased it."
+
+# Shop messages
+shop:
+  header: "&8&m-----&r &b&lPermissions Shop &8&m-----"
+  footer: "&8&m--------------------------"
+  empty: "&cThe shop is empty."
+  item: "&b{id} &8- &f{name} &7({price})\n&7{description}\n&8Type: &f{type}&8, {duration}{uses}"
+
+# Purchase messages
+purchase:
+  success: "&aYou've purchased &f{item} &afor &f{price}&a!"
+  command_usage: "&aYou can use this command &f{uses} &amore times."
+  permission_duration: "&aThis permission will expire in &f{duration}&a."
+
+# Buy command
+buy:
+  usage: "&cUsage: /psbuy <itemId>"
+
+# Admin messages
+admin:
+  reload_success: "&aConfigurations reloaded successfully."

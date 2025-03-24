@@ -1,0 +1,62 @@
+# PermissionsShop Shop Configuration
+
+items:
+  # Timed flight permission
+  fly:
+    name: "Flight"
+    description: "Allows you to fly for a limited time"
+    price: 1000.0
+    type: TIMED_PERMISSION
+    duration: 3600  # 1 hour in seconds
+    uses: 0  # Not used for timed permissions
+    permission: "essentials.fly"
+    command: ""  # Not used for timed permissions
+    display_in_shop: true
+
+  # Limited use heal command
+  heal:
+    name: "Healing"
+    description: "Allows you to use /heal a limited number of times"
+    price: 500.0
+    type: LIMITED_COMMAND
+    duration: 0  # Not used for limited commands
+    uses: 5
+    permission: ""  # Not used for limited commands
+    command: "heal"
+    display_in_shop: true
+
+  # One-time command execution
+  kit_vip:
+    name: "VIP Kit"
+    description: "Gives you a VIP kit once"
+    price: 2000.0
+    type: ONE_TIME_COMMAND
+    duration: 0  # Not used for one-time commands
+    uses: 0  # Not used for one-time commands
+    permission: ""  # Not used for one-time commands
+    command: "kit vip {player}"
+    display_in_shop: true
+
+  # Permanent permission
+  vip_tag:
+    name: "VIP Tag"
+    description: "Gives you a permanent VIP tag"
+    price: 5000.0
+    type: PERMANENT_PERMISSION
+    duration: 0  # Not used for permanent permissions
+    uses: 0  # Not used for permanent permissions
+    permission: "tags.vip"
+    command: ""  # Not used for permanent permissions
+    display_in_shop: true
+
+  # Home slot purchase
+  home_slot:
+    name: "Extra Home Slot"
+    description: "Adds an additional home slot"
+    price: 1500.0
+    type: HOME_SLOT
+    duration: 0  # Not used for home slots
+    uses: 1  # Number of slots to add
+    permission: ""  # Not used for home slots
+    command: ""  # Not used for home slots
+    display_in_shop: true

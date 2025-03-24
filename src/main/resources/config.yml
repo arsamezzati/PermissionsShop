@@ -1,0 +1,18 @@
+# PermissionsShop Configuration
+
+# Check interval for timed permissions (in seconds)
+check_interval: 30
+
+# Storage settings
+storage:
+  # Storage type (sqlite or mysql)
+  type: sqlite
+
+  # MySQL settings (if using mysql)
+  mysql:
+    host: localhost
+    port: 3306
+    database: permissionshop
+    username: root
+    password: password
+    options: '?useSSL=false&autoReconnect=true'
