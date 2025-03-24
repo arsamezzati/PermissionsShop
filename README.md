@@ -42,12 +42,12 @@ PermissionsShop is a dynamic plugin designed to create an in-game economy around
     - Customizable prices for each item
 
 - **Permission System**:
-    - LuckPerms integration for reliable permission management
-    - Fallback system for servers without LuckPerms
+    - LuckPerms integration for reliable permission management (Required)
+    - Fallback system for servers without LuckPerm ( not recommended )
 
 - **Database Storage**:
     - SQLite storage for tracking purchases
-    - MySQL support planned for future versions
+    - MySQL support (optional)
 
 - **Admin Tools**:
     - Give or revoke purchased items to/from players
@@ -56,8 +56,8 @@ PermissionsShop is a dynamic plugin designed to create an in-game economy around
 
 ## 📋 Requirements
 
-- **Minecraft Server**: Bukkit/Spigot/Paper 1.16 or higher
-- **Java**: Java 11 or higher (Java 21 recommended)
+- **Minecraft Server**: Bukkit/Spigot/Paper 1.16 or higher (built for 1.21.x)
+- **Java**: Java 17 or higher (Java 21 recommended)
 - **Dependencies**:
     - [Vault](https://www.spigotmc.org/resources/vault.34315/) - For economy support
     - An economy plugin that hooks into Vault (e.g., EssentialsX, CMI)
